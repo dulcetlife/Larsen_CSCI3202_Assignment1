@@ -26,7 +26,7 @@ class Queue(object):
 def testQueue():
 	print("Testing Queue")
 	queue=Queue()
-	for i in range(1,11):
+	for i in range(1,16):
 		queue.enqueue(i)
 	while (queue.checkSize() != 0):
 		print(queue.dequeue())
@@ -50,7 +50,7 @@ class Stack(object):
 def testStack():
 	print("Testing Stack")
 	stack = Stack()
-	for i in range(1,11):
+	for i in range(1,16):
 		stack.push(i)
 	while (stack.checkSize() != 0):
 		print(stack.pop())
@@ -177,16 +177,22 @@ class Graph(object):
 	def findVertex(self, value):
 		if value in self.dict:
 			print(self.dict[value])
+		else:
+			print("Vertex not found")
 
 def testGraph():
 	print("Testing Graph")
 	graph = Graph()
 	for i in range(1,22):
 		graph.addVertex(i)
+	graph.addVertex(20)
 	for i in range(1,21):
 		graph.addEdge(i,i+1)
+	graph.addEdge(30,1)
 	for i in range(2,7):
 		graph.findVertex(i)
+	graph.findVertex(22)
+
 
 
 def main():
