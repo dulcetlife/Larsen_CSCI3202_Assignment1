@@ -2,6 +2,7 @@
 #Henrik Larsen
 #Github username: dulcetlife
 #Github repo: https://github.com/dulcetlife/Larsen_CSCI3202_Assignment1
+#Written in Python 3
 
 
 
