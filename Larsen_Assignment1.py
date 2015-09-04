@@ -146,9 +146,12 @@ def testBinaryTree():
 	myTree.addNode(9, 4)
 	myTree.addNode(10, 5)
 	myTree.addNode(11, 5)
+	myTree.addNode(12, 5)
 	myTree.printTree()
 	for i in range(8,12):
 		myTree.delete(i)
+	myTree.delete(3)
+	myTree.delete(2)
 	myTree.printTree()
 
 
